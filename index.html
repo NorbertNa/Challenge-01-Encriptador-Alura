@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" href="resources/Logo-Alura.png">
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400&display=swap" rel="stylesheet">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Codificador Alura</title>
+        </head>
+        <body>
+            <header>
+                <img src="resources/Logo-Alura.png" alt="Logo de Alura" class="logo">
+            </header>
+            <main>
+                <span class="texto-cliente">
+                    <textarea type="text" name="caja-de-texto" class="caja-texto-cliente" id="caja-texto-cliente" placeholder="Escriba aquí el texto a encriptar..."  rows="60"></textarea>
+                </span>
+
+                    <p class="mensaje-alerta">&#9888; Solo letras minúsculas sin caracteres especiales.</p>
+
+                <span class="botones">
+                    <button class="boton-codificar">
+                        Codificar
+                    </button>
+                    <button class="boton-decodificar">
+                        Decodificar
+                    </button>
+                </span>
+                <div class="prueba">
+                    <span class="texto-servidor">
+                        <div  class="caja-centrar">
+                            <span id="standby" ><img src="resources/Standby.png" alt="Imágen standby" class="standby"></span>
+                            <span id="titulo" >Ningún mensaje fue encontrado.</span>
+                            <span id="texto-caja-servidor">Por favor ingrese el texto a encriptar en el área correspondiente.</span>
+                            <textarea id="mensaje-codificado" class="invisible"></textarea>
+                            <textarea id="mensaje-decodificado" class="invisible"></textarea>
+                            <button class="copiar-elemento">
+                                Copiar
+                            </button>
+                        </div>
+                    </span>
+                </div>
+                
+            </main>
+            <script src="js/decodificador.js"></script>
+            <script src="js/codificador.js"></script>
+            <script src="js/comprobar.js"></script>
+            <script src="js/copiar.js"></script>
+            <script src="js/altura-caja-texto.js"></script>
+        </body>
+</html>

@@ -1,0 +1,312 @@
+html
+{
+  background-color: #f0e6ff;
+}
+
+.logo
+{
+  margin-top: 40px;
+  margin-left: 84px;
+  display: block;
+}
+
+.caja-texto-cliente
+{
+  color: #6600ff;
+  font-size: 32px;
+  background-color: #f0e6ff;
+  height: 480px;
+  font-family: 'Anek Telugu', sans-serif;
+  border: none;
+  resize: none;
+  outline: none;
+  width: 720px;
+}
+
+.caja-texto-cliente::placeholder
+{
+  color: #6600ff;
+}
+
+.texto-cliente 
+{
+  margin-top: 80px;
+  margin-left: 240px;
+  display: inline-block;
+}
+
+.texto-servidor
+{
+  position: fixed;
+  top: 40px;
+  bottom: 40px;
+  right: 40px;
+  width: 400px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+#titulo
+{
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: 'Anek Telugu', sans-serif;
+  padding: 0 2%;
+}
+
+#texto-caja-servidor
+{
+  font-size: 20px;
+  font-family: 'Anek Telugu', sans-serif;
+  padding: 0 2%;
+}
+
+.invisible
+{
+  display: none;
+}
+
+span
+{
+  display: block;
+}
+
+span p
+{
+  font-family: 'Anek Telugu', sans-serif;
+  padding: 0 32px;
+  display: block;
+  text-align: center;
+}
+
+span textarea
+{
+  font-family: 'Anek Telugu', sans-serif;
+  padding: 0 32px;
+  resize: none;
+  border: none;
+  background-color: transparent;
+}
+
+.caja
+{
+  height: 100%;
+}
+
+.caja-centrar
+{
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
+.boton-codificar
+{
+  font-size: 1em;
+  color: #f0e6ff;
+  width: 328px;
+  height: 67px;
+  background-color: #6600ff;
+  transition-duration: 0.4s;
+  margin-right: 24px;
+  border-radius: 20px;
+  display: inline-block;
+  border-color: #6600ff;
+}
+
+.boton-codificar:active
+{
+  color: #6600ff;
+  background-color: #f0e6ff;
+}
+
+.boton-decodificar
+{
+  font-size: 1em;
+  color: #6600ff;
+  width: 328px;
+  height: 67px;
+  background-color: #f0e6ff;
+  transition: 0.5s;
+  border-radius: 20px;
+  display: inline-block;
+  border-color: #6600ff;
+}
+
+.boton-decodificar:active
+{
+  color: #f0e6ff;
+  background-color: #6600ff;
+}
+
+.botones
+{
+  display: block;
+  margin-left: 240px;
+  font-family: 'Anek Telugu', sans-serif;
+}
+
+.mensaje-alerta
+{
+  margin-left: 240px;
+  font-family: 'Anek Telugu', sans-serif;
+}
+
+#mensaje-codificado
+{
+  margin-top: 6%;
+  width: 90%;
+  text-align: justify;
+  word-wrap: break-word;
+  pointer-events: none;
+  text-align: justify;
+}
+
+#mensaje-codificado::selection
+{
+  background-color: transparent;
+  border: none;
+}
+
+#mensaje-decodificado
+{
+  margin-top: 6%;
+  width: 90%;
+  text-align: justify;
+  word-wrap: break-word;
+  pointer-events: none;
+  text-align: justify;
+}
+
+#mensaje-decodificado::-moz-selection
+{
+  background-color: transparent;
+  border: none;
+}
+
+.prueba
+{
+  height: auto;
+  
+}
+
+.copiar-elemento
+{
+  font-size: 1em;
+  color: #6600ff;
+  width: 328px;
+  height: 67px;
+  background-color: white;
+  transition: 0.5s;
+  border-radius: 20px;
+  border-color: #6600ff;
+  margin: 2%;
+}
+
+.copiar-elemento:active
+{
+  color: white;
+  background-color: #6600ff;
+}
+
+@media screen and (max-width: 1400px)
+{
+  .logo
+  {
+    margin: 2%;
+  }
+  .standby
+  {
+    display: none;
+  }
+  .texto-servidor
+  {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: auto;
+    margin: 2%;
+    display: block;
+    height: auto;
+    
+  }
+  .boton-decodificar
+  {
+    position: absolute;
+  padding: 0;
+  right: 2%;;
+    width: 45.5%;
+  }
+  .boton-codificar
+  {
+    width: 45.5%;
+    margin: 0 2%;
+  }
+  .mensaje-alerta
+  {
+    margin-left: 2.5%;
+  }
+  .botones
+  {
+    margin: 0;
+  }
+  .texto-cliente
+  {
+    margin: 80px 0 0 0;
+    width: 100%;
+  }
+  #caja-texto-cliente
+  {
+    padding: 0%;
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+  .caja-centrar
+  {
+    transform: none;
+    padding: 2%;
+  }
+  #mensaje-codificado
+  {
+    height: auto;
+    padding: 0%;
+    width: 96%;
+  }
+  #mensaje-decodificado
+  {
+    height: auto;
+    padding: 0%;
+    width: 96%;
+  }
+  .copiar-elemento
+  {
+    width: 96%;
+  }
+}
+@media screen and (max-width: 430px)
+{
+  .botones
+  {
+    height: 134px;
+  }
+  .boton-codificar
+  {
+    margin: 0%;
+    display: block;
+    width: 96%;
+  }
+  .boton-decodificar
+  {
+    display: block;
+    width: 96%;
+  }
+  .prueba
+  {
+    display: block;
+  }
+}
